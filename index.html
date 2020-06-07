@@ -8,17 +8,26 @@
     <title>Bootstrap Grids</title>
 </head>
 <body class="bg-secondary">
-    <!-- border stylings, 1 row, three columns x2 -->
+    <!-- Containers -> rows -> columns -> THINGS -->
+    <div class="container">
+        <div class="row">
+            <!-- first column has a dark background, and white text that is centered -->
+            <div class="col bg-dark text-white text-center"> I am a column </div>
+            <!-- second column has a light background, and default text that is on the right -->
+            <div class="col bg-light text-right"> So am I!</div>
+        </div>
+    </div>
+    <!-- This container has 2 rows, three columns per row with border stylings-->
     <div class="container">
         <div class="row">
             <div class="col border-left">Column 1</div>
-            <div class="col border-bottom">Column 2</div>
+            <div class="col border">Column 2</div>
             <div class="col border-right">column 3</div>
         </div>
         <div class="row">
             <div class="col border border-primary">Column 1</div>
             <div class="col border-top border-bottom border-info">Column 2</div>
-            <div class="col">column 3</div>
+            <div class="col border border-dark">column 3</div>
         </div>
 
         <!-- one row, three cards -->
@@ -37,34 +46,32 @@
             </div>
         </div>
         <!-- 4 column row of cards, stacks on small screen -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xl">
+            <div class="row no-gutters">
+                <div class="col-lg">
                     <div class="card">
                         <div class="card-title">Card 1</div>
                         <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo culpa eaque eum minima tempora debitis praesentium. Fugiat soluta porro, eos, ipsum eum iusto beatae, quisquam dolor autem aliquam dolorum deleniti.</div>
                     </div>
                 </div>
-                <div class="col-xl">
+                <div class="col-lg">
                     <div class="card">
                         <div class="card-title">Card 2</div>
                         <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo culpa eaque eum minima tempora debitis praesentium. Fugiat soluta porro, eos, ipsum eum iusto beatae, quisquam dolor autem aliquam dolorum deleniti.</div>
                     </div>
                 </div>
-                <div class="col-xl">
+                <div class="col-lg">
                     <div class="card">
                         <div class="card-title">Card 3</div>
                         <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo culpa eaque eum minima tempora debitis praesentium. Fugiat soluta porro, eos, ipsum eum iusto beatae, quisquam dolor autem aliquam dolorum deleniti.</div>
                     </div>
                 </div>
-                <div class="col-xl">
+                <div class="col-lg">
                     <div class="card">
                         <div class="card-title">Card 4</div>
                         <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo culpa eaque eum minima tempora debitis praesentium. Fugiat soluta porro, eos, ipsum eum iusto beatae, quisquam dolor autem aliquam dolorum deleniti.</div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 
